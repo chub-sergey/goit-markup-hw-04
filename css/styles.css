@@ -197,7 +197,7 @@ button {
 }
 
 .feature-icons-items {
-  background-color: #f4f4fd;
+  background-color: var(--light-second-color);
   align-items: center;
 
   display: flex;
@@ -343,11 +343,11 @@ button {
   height: 100%;
 
   border-radius: 50%;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand-color);
 }
 .social-list-link:hover,
 .social-list-link :focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -355,7 +355,7 @@ button {
 }
 
 .social-list-icon {
-  fill: #f4f4fd;
+  fill: var(--light-second-color);
 }
 /* ===============Customers================== */
 .customers {
@@ -376,7 +376,7 @@ button {
   text-transform: capitalize;
   width: 183px;
   /* height: 40px; */
-  color: #2e2f42;
+  color: var(--main-color);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -405,12 +405,12 @@ button {
 }
 .customers-link:hover,
 .customers-link:focus {
-  border-color: #404bbf;
+  border-color: var(--pressed-state-color);
 }
 .customers-link:hover .customers-icon,
-.customers-link:hover .customers-icon {
-  border-color: #404bbf;
-  stroke: #404bbf;
+.customers-link:focus .customers-icon {
+  /* fill: #404bbf; */
+  stroke: var(--pressed-state-color);
 }
 .customers-icon {
   fill: #8e8f99;
@@ -460,7 +460,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--light-first-color);
   margin-bottom: 15px;
 }
 .footer-social-list {
