@@ -99,6 +99,7 @@ button {
 .header-item {
   margin-right: 40px;
 }
+
 .header-item:last-child {
   margin-right: 0px;
 }
@@ -110,6 +111,7 @@ button {
   color: var(--main-color);
   padding: 8px;
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--pressed-state-color);
@@ -149,8 +151,11 @@ button {
 }
 /* =============  Hero================== */
 .hero {
+  display: flex;
   background-color: var(--main-color);
   text-align: center;
+  justify-content: center;
+
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -189,25 +194,18 @@ button {
 }
 
 /* ============= Features================= */
-.feature-icons-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
 
-.feature-icons-items {
+.feature-icons {
   background-color: var(--light-second-color);
   align-items: center;
-
+  justify-content: center;
+  height: 112px;
   display: flex;
   flex-basis: calc((100%-72px) / 4);
   margin-bottom: 8px;
 }
 
 .feature-icons-icon {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .features {
@@ -351,7 +349,7 @@ button {
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: none;
+  fill: var(--light-second-color);
 }
 
 .social-list-icon {
@@ -407,10 +405,8 @@ button {
 .customers-link:focus {
   border-color: var(--pressed-state-color);
 }
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  /* fill: #404bbf; */
-  stroke: var(--pressed-state-color);
+.customers-link:hover > .customers-icon {
+  fill: var(--pressed-state-color);
 }
 .customers-icon {
   fill: #8e8f99;
@@ -489,5 +485,5 @@ button {
 .footer-social-link .footer-social-icon:focus {
 }
 .footer-social-icon {
-  fill: #f4f4fd;
+  fill: var(--light-second-color);
 }
